@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>tugas 39 javascript</title>
+  </head>
+  <body>
+
+      <button type="button" onclick="Tombol()" name="button">jalankan</button>
+      <br />
+      <br />
+      <hr />
+      <b>Active Element</b> property :
+      <br />
+      <p id="contoh1">contoh</p>
+
+      <hr />
+      <b>addEventListener()</b> property :
+      <br />
+      <p id="contoh2">contoh</p>
+      <hr />
+      <b>anchor</b> property :(<a name="jeruk" href="#">jeruk</a>
+      <a name="semangka" href="#">semangka</a>) : <br />
+      <p id="contoh">contoh</p>
+      <hr />
+
+      <script type="text/javascript">
+        function Tombol() {
+          var a = document.activeElement.tagName;
+          document.getElementById("contoh1").innerHTML = a;
+
+          document.addEventListener("click" ,function () {
+          document.getElementById("contoh2").innerHTML ="sukses ! merubah addEventListener()"
+
+        });
+
+        var a = document.anchors.length;
+        document.getElementById("contoh").innerHTML = a;
+        }
+      </script>
+  </body>
+</html>

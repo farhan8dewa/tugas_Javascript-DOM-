@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>tugas 46 javascript</title>
+  </head>
+  <body>
+    <p>click untuk merubah warna</p>
+    <button onclick="rubah_warna()" type="button" name="button">masukan nama anda</button>
+
+    <script type="text/javascript">
+      function rubah_warna() {
+          var nama = prompt("ketik warna yang kamu inginkan ","warna")
+          if (nama != null ) {
+            document.body.style.backgroundColor = "yellow"
+            
+          }
+      }
+    </script>
+  </body>
+</html>

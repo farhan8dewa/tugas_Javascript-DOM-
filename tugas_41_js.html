@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>tugas javascript 41</title>
+  </head>
+  <body>
+    <p >pilih warna background</p>
+
+    <select id="myselect" onchange="myfunction()">
+      <option id="red"  value="red">merah</option>
+      <option id="blue" value="blue">biru</option>
+      <option id="yellow" value="yellow">kuning</option>
+      <option id="white" value="white">putih</option>
+    </select>
+
+    <p>saat kamu memilih warna , background akan berubah</p>
+    <br>
+
+    <script type="text/javascript">
+      function myfunction(){
+
+        var a = document.getElementById("myselect").value;
+
+        document.getElementById("red");
+        document.body.style.backgroundColor = "red" 
+
+        document.getElementById("blue");
+        document.body.style.backgroundColor = "blue"
+
+        document.getElementById("yellow");
+        document.body.style.backgroundColor = "yellow"
+
+
+        }
+
+    </script>
+  </body>
+</html>

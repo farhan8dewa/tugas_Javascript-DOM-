@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>tugas 40 javascript</title>
+  </head>
+  <body>
+    <button type="button" onclick="Tombol()" name="button">jalankan</button>
+    <br />
+    <br />
+    <hr />
+    <b>base URL</b> property :
+    <br />
+    <p id="contoh1">contoh</p>
+
+    <hr />
+    <b>Body</b> property :
+    <br />
+    <p id="contoh2">contoh</p>
+    <hr />
+    <b>create </b> Element :
+    <br />
+    <br />
+
+    <script type="text/javascript">
+      function Tombol() {
+        var a = document.documentURI;
+        document.getElementById("contoh1").innerHTML =a;
+
+        document.body.style.backgroundColor = "green"
+        document.getElementById("contoh2").innerHTML = "color : green"
+
+        var a = document.createElement("input");
+        a.innerHTML ="text"
+        document.body.appendChild(a);
+      }
+    </script>
+  </body>
+</html>

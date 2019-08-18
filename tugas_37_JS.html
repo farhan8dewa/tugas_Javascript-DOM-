@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>tugas 37 javascript</title>
+  </head>
+  <body>
+    <button type="button" onclick="Tombol()" name="button">jalan</button>
+    <br />
+    <br />
+    <hr />
+    Atribut <b>getNamedItem ()</b> :
+    <p id="contoh1">contoh</p>
+    <hr />
+
+    <hr />
+    Atribut <b>Name ()</b> :
+    <p id="contoh2">contoh</p>
+    <hr />
+
+    <hr />
+    Atribut <b>length ()</b> :
+    <p id="contoh3">contoh</p>
+    <hr />
+
+    <script type="text/javascript">
+      function Tombol() {
+        var a = document.getElementsByTagName("button")[0]
+        var b = a.attributes.getNamedItem("onclick").value;
+        document.getElementById("contoh1").innerHTML = b;
+
+        var a = document.getElementsByTagName("button")[0]
+        var b = a.attributes.item(0).name;
+        document.getElementById("contoh2").innerHTML = b;
+
+
+        var a = document.getElementsByTagName("button")[0]
+        var b = a.attributes.length;
+        document.getElementById("contoh3").innerHTML = b;
+
+
+
+      }
+
+
+
+    </script>
+  </body>
+</html>
